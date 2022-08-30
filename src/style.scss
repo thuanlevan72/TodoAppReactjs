@@ -24,6 +24,7 @@ body {
     width: 100%;
     height: auto;
     min-height: 500px;
+    position: relative;
     max-width: 500px;
     min-width: 250px;
     background: #f1f5f8;
@@ -131,6 +132,8 @@ body {
         .dleCheckBox {
             max-width: 100%;
             color: red;
+            font-weight: bold;
+            font-size: 14px;
         }
     }
 

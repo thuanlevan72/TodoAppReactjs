@@ -7,7 +7,7 @@ const todoApi = {
   },
   Posttodo: (data, params = null) => {
     const url = "/Todo";
-
+    console.log(params);
     return axiosClient.post(url, data, {});
   },
   getOneId: (id) => {
