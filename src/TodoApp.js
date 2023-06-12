@@ -39,7 +39,7 @@ function TodoApp() {
       }
     };
     fetchTodoApi();
-  }, [pageRes]);
+  }, [pageRes,data]);
   useEffect(() => {
     StetCheckUpdate(false);
   }, [checkUpdate]);
@@ -59,6 +59,7 @@ function TodoApp() {
         console.log(dataRes);
         SetData((prev) => (prev = [dataRes, ...prev]));
         setInput("");
+        
         SetCheckLoadding((prev) => (prev = true));
       } catch (error) {
         SetCheckLoadding((prev) => (prev = true));
